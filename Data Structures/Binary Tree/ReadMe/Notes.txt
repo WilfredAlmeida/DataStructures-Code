@@ -1,0 +1,5 @@
+1. 
+
+Labelled Nodes: Nodes with labelling like A,B,C.
+Unlabelled Nodes: Nodes with no labelling, on whiteboard they are represented using 
+empty circles.
