@@ -22,7 +22,9 @@ int main()
         if (a >= 65 && a <= 122)
         {
             if (a < 96)
-                a = a + 7 + 25;
+                a = a + 7 + 25;//Uppercase ASCII end at 90, and uppercase beigin at 97
+                //conversison idea is converting ASCII codes. So 7 is filling gap from
+                //90 to 97. Adding 25 then gives exact reverse case of a letter.
             else
                 a = a - 7 - 25;
 
