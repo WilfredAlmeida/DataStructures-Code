@@ -47,7 +47,7 @@ void directed_graph(int matrix[SIZE][SIZE])
     printf("\nVertices \t Indegree \t Outdegree");
 
     for (int i = 1; i < SIZE; i++) //i will denote rows i.e. vertices and j will denote
-    //columns i.e. edges
+    //columns i.e. edges. graph[i][j] is hya vertex chi he edge
     {
         int indegree = 0, outdegree = 0;
         int j;
