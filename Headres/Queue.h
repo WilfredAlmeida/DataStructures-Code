@@ -10,19 +10,19 @@ struct Node
     struct Node *next;
 };
 
-void queue_enqueue(struct Node *queue, int val)
+void queue_enqueue(struct Node **queue, int val)
 {
     struct Node *t = (struct Node*)malloc(sizeof(struct Node));
     t->data = val;
     t->next = NULL;
 
-    if(queue == NULL)
+    if(*queue == NULL)
     {
-        queue = t;
+        *queue = t;
     }
     else
     {
-        struct Node *p = queue;
+        struct Node *p = *queue;
 
         while(p->next != NULL)
             p = p->next;
@@ -31,11 +31,11 @@ void queue_enqueue(struct Node *queue, int val)
     }
 }
 
-struct Node* queue_dequeue(struct Node *queue)
+int queue_dequeue(struct Node **queue)
 {
-    struct Node *p = queue;
-    queue = queue->next;
-    return p;
+    struct Node *p = *queue;
+    *queue = (*queue)->next;
+    return p->data;
 }
 
 bool is_empty_queue(struct Node *queue)
