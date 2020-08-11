@@ -1,18 +1,12 @@
 #ifndef Stack
 
-#include<stdio.h>
 #include<stdlib.h>
 #include<stdbool.h>
+#include"Node.h"
 
-struct SNode
+void stack_push(struct Node **stack, int value)
 {
-    int data;
-    struct SNode *next;
-};
-
-void stack_push(struct SNode **stack, int value)
-{
-    struct SNode *t = (struct SNode*)malloc(sizeof(struct SNode));
+    struct Node *t = (struct Node*)malloc(sizeof(struct Node));
     t->data = value;
     t->next = NULL;
 
@@ -20,7 +14,7 @@ void stack_push(struct SNode **stack, int value)
         *stack = t;
     else
     {
-        struct SNode *p = *stack, *q = NULL;
+        struct Node *p = *stack, *q = NULL;
 
         while(p != NULL)
         {
@@ -31,9 +25,9 @@ void stack_push(struct SNode **stack, int value)
     }
 }
 
-int stack_pop(struct SNode **stack)
+int stack_pop(struct Node **stack)
 {
-    struct SNode *p = *stack, *q = NULL;
+    struct Node *p = *stack, *q = NULL;
 
     while(p->next != NULL)
     {
@@ -47,9 +41,9 @@ int stack_pop(struct SNode **stack)
     return p->data;
 }
 
-int stack_peek(struct SNode *stack)
+int stack_peek(struct Node *stack)
 {
-    struct SNode *p = stack;
+    struct Node *p = stack;
 
     while(p->next != NULL)
         p = p->next;
@@ -57,16 +51,16 @@ int stack_peek(struct SNode *stack)
     return p->data;
 }
 
-bool is_empty_stack(struct SNode *stack)
+bool is_empty_stack(struct Node *stack)
 {
     if(stack == NULL)
         return true;
     return false;
 }
 
-bool stack_search(struct SNode *stack,int val)
+bool stack_search(struct Node *stack,int val)
 {
-    struct SNode *p = stack;
+    struct Node *p = stack;
 
     while(p != NULL && p->data != val)
         p = p->next;

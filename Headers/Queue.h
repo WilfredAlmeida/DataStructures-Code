@@ -1,14 +1,8 @@
 #ifndef Queue
 
-#include<stdio.h>
 #include<stdlib.h>
 #include<stdbool.h>
-
-struct Node
-{
-    int data;
-    struct Node *next;
-};
+#include"Node.h"
 
 void queue_enqueue(struct Node **queue, int val)
 {
