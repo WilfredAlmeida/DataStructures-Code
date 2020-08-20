@@ -2,6 +2,7 @@
 
 Refer: Abdul Bari DS Sorting videos 19-20
 
+Scroll for detailed explaination ;)
 */
 
 #include <stdio.h>
@@ -42,8 +43,20 @@ void print_array(int *a,size_t s)
 
 int c[100];//taken global cuz if created in function and returned than would get
 //destroyed when function ends.
+
 int *merge_arrays(int *a,size_t a_size, int *b, size_t b_size)
 {
+    /*
+    Idea of merging is that take 'i','j' pointing to initial index of arrays to be merged
+    'a','b' here. Take k pointing to initial index of auxillary array 'c' here.
+
+    Compare a[i] and b[j] and whichever is smaller, put it in c[k], increment 'k'
+    and either 'i' or 'j' whichever was index of the smaller element.
+
+    Repeat this until any one array 'a', 'b' finishes. After that copy remaining
+    elements from the other array into 'c'. Done :)
+    */
+
     int i = 0, k = 0, j = 0;
     size_t m = a_size;
     size_t n = b_size;

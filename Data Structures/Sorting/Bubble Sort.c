@@ -1,4 +1,8 @@
-//Bubble Sort
+/*
+
+Refer: Abdul Bari DS
+
+*/
 
 #include <stdio.h>
 #define SIZE 5

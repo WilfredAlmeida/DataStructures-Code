@@ -4,9 +4,9 @@ Refer: Abdul BAri DS
 
 In Insertion Sort, we assume that the first element of list is already sorted.
 Then we take the next element and compare it with all the previous elements before it.
-So let x be element to be inserted and i be the element being compared to.
-Shift all elements greater than x and when we reach 0 or find an element greater
-than x, insert x.
+So let x be element to be inserted sortedly, and i be the element being compared to.
+So, shift all elements greater than x to right and when we reach 0 or find an element
+greater than x, insert x.
 
 */
 

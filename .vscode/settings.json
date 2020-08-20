@@ -2,6 +2,7 @@
     "C_Cpp.errorSquiggles": "Disabled",
     "files.associations": {
         "linked_list.h": "c",
-        "undirected_list_graph.h": "c"
+        "undirected_list_graph.h": "c",
+        "node.h": "c"
     }
 }

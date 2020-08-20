@@ -5,6 +5,9 @@ Refer: Abdul Bari DS Sorting video 19
 Merging Idea here is take a variable mid = (low(0) + high(size-1))/2, treat the list
 as 2 separate lists from low to mid and mid+1 to high.Merge them.
 
+'mid' is basically the last index where one list ends and after it, the other list
+begins.
+
 */
 
 #include <stdio.h>
@@ -38,7 +41,8 @@ void print_list(int *a, int n)
 }
 
 
-void merge_array(int *a, int l,int m,int h)
+void merge_array(int *a, int l,int m,int h)//Read the code, you'll understand or
+//read comments from "2-Way Merging.c" file or watch video.
 {
     int i = l,j=m+1,k=0;
     int c[h+1];
