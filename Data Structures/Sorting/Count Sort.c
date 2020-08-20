@@ -7,9 +7,9 @@ order.
 
 Idea here is take an array whose size is equal to the biggest element in the array
 to be sorted and initialize its all values with 0.
-Traverse the array to be sorted and for every element increment increment the value
-at that index in the other array.
-For the other array, if its element is <0 copy the index of that element in the array
+Traverse the array to be sorted and for every element increment the value at that 
+index in the other array.
+For the other array, if its element is >0 copy the index of that element in the array
 to be sorted.
 
 */
@@ -60,8 +60,8 @@ void count_sort(int *a, int n)
 {
     int max = find_max(a,n), i=0,j=0;
 
-    int *aux = (int*) malloc(sizeof(a)+1);//auxillary array of size of max element
-    //of array to be sorted
+    int *aux = (int*) malloc(sizeof(a)+1);//auxillary array of highest indez equal to
+    //max element of array to be sorted
 
     for(int i=0;i<=max;i++)//initializing auxillary array
         aux[i] = 0;
