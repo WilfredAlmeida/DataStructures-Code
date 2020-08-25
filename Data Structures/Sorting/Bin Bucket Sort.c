@@ -6,16 +6,16 @@ Refer: Abdul Bari DS
 1) Create n empty buckets (Or lists).
 
 2) Do following for every array element arr[i].
-    a)Perform sorted insert for arr[i] into bucket[n*array[i]]. This formula
+    a)Perform sorted insert for arr[i] into bucket[n*arr[i]]. This formula
   decides memory consumption of the program and needs to be adjusted as per size of
-  input. This formula works for decimal values btwm 0.0 to 1.0. We doing it based on
-  first digit of the number.
+  input. This formula works for decimal values btwm 0.0 to 1.0. We are doing it based
+  on first digit of the number.
 
 3) Sort individual buckets using insertion sort.
 
 4) Concatenate all sorted buckets.
 
-So radix sort and bucket sort are the same, raix sort is improvised version of
+So radix sort and bucket sort are the same, radix sort is improvised version of
 Bucket Sort and what we have done in this code is inbetween both. Watch Abdul's
 video and you'll understand.
 
@@ -87,7 +87,6 @@ void bin_bucket_sort(int *a, int n)
 
 void insert(struct Node **bucket, int n)//insert values into bucket
 {
-
     struct Node *t = (struct Node *)malloc(sizeof(struct Node));
     t->data = n;
     t->next = NULL;
