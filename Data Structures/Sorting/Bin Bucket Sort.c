@@ -8,7 +8,7 @@ Refer: Abdul Bari DS
 2) Do following for every array element arr[i].
     a)Perform sorted insert for arr[i] into bucket[n*arr[i]]. This formula
   decides memory consumption of the program and needs to be adjusted as per size of
-  input. This formula works for decimal values btwm 0.0 to 1.0. We are doing it based
+  input. This formula works for decimal values btwn 0.0 to 1.0. We are doing it based
   on first digit of the number.
 
 3) Sort individual buckets using insertion sort.
@@ -23,7 +23,7 @@ video and you'll understand.
 
 #include <stdio.h>
 #include <stdlib.h>
-#define SIZE 5
+#define SIZE 12
 
 struct Node
 {
@@ -37,7 +37,7 @@ void insert(struct Node **bucket, int n);
 
 int main()
 {
-    int arr[SIZE] = {5,10,15,2,781254};
+    int arr[SIZE] = {11,45,78,32,799,451,787,3365,4758,5524,1212,669};
 
     printf("\nUnsorted Array:");
     print_array(arr, SIZE);

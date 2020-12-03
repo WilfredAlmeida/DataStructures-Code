@@ -42,7 +42,7 @@ int main()
 
 void directed_graph(int matrix[SIZE][SIZE])
 {
-    read_graph(matrix); //reading graph alues i.e. which node is adjacent to which node
+    read_graph(matrix); //reading graph values i.e. which node is adjacent to which node
 
     printf("\nVertices \t Indegree \t Outdegree");
 

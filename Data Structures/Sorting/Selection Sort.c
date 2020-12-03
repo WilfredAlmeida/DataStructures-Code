@@ -14,14 +14,14 @@ Algo:
 int main()
 {
     
-    int arr[size] = {5,4,3,2,1};
+    int arr[size] = {64, 25, 12, 22, 11};
 
     printf("\nUnsorted List:");
     print_list(arr);
 
     selection_sort(arr);
 
-    printf("\nSorted ListL");
+    printf("\nSorted List:");
     print_list(arr);
     
     return 0;
@@ -38,15 +38,17 @@ void selection_sort(int arr[])
 {
     int i,j,k;
 
-    for(i=0;i<size;i++)
+    for(i=0;i<size-1;i++)
     {
-        for(j=k=i;j<size;j++)
+        k = i;
+        for(j=i+1;j<size;j++)
         {
-            if(arr[j] < arr[i])
+            if(arr[j] < arr[k])
                 k = j;
         }
+        if(k!=i){
         int t = arr[i];
         arr[i] = arr[k];
-        arr[k] = t;
+        arr[k] = t;}
     }
 }

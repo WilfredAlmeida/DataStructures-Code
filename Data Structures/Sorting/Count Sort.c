@@ -24,7 +24,7 @@ void count_sort(int *a, int n);
 int main()
 {
 
-    int arr[] = {6, 5, 4, 3, 2, 1,6};
+    int arr[] = {0, 2, 1, 2, 0};
     size_t n = sizeof(arr) / sizeof(arr[0]);
 
     printf("\nUnsorted Array:");

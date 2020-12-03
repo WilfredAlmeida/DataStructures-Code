@@ -12,7 +12,7 @@ void merge(int *a, int l, int m, int h);
 
 int main()
 {
-
+                    
     int arr[] = {6, 5, 4, 3, 2, 1};
     size_t n = sizeof(arr) / sizeof(arr[0]);
 

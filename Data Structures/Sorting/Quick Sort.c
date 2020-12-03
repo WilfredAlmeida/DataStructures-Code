@@ -51,7 +51,7 @@ void quick_sort(int *a, int l, int h)//Array to be sorted, lower & upper bounds 
 //array
 {
     //Idea here is take the first element as pivot, partition the list such that
-    //elements smaller than pivot are to its less and elements greater than pivot
+    //elements smaller than pivot are to its left and elements greater than pivot
     //are to its right. We now have the pivot element at its appropriate place.
     //Then repeat the same for elements to its left and to its left
     
@@ -60,7 +60,7 @@ void quick_sort(int *a, int l, int h)//Array to be sorted, lower & upper bounds 
     if (l < h)//There are at least 2 elements in the list
     {
         j = partition(a, l, h);//partition the list around pivot, pivot will
-        //be taken element at index 'l'. Function will return index of pivot, use
+        //be taken element at index 'l'. Function will return index of pivot, used
         //to sort left and right sides
 
         quick_sort(a, l, j);//Sorting left side

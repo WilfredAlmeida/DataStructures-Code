@@ -9,7 +9,7 @@ Refer: Abdul Bari DS
 
 int main()
 {
-    int a[SIZE] = {5, 4, 3, 2, 1};
+    int a[] = {5, 4, 3, 2, 1};
 
     printf("\nUnsorted List:\n");
 

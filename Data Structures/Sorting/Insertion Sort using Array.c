@@ -49,6 +49,7 @@ void insertion_sort(int arr[])
             arr[j + 1] = arr[j];
             j--;
         }
+        
         arr[j + 1] = x;
     }
 }

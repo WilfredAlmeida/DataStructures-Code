@@ -8,9 +8,7 @@ than we say there are 2 components in the graph.
 
 In the count function below, we dfs a vertex, so that vertex and its connected
 vertices get added into visited vertices list and so we increment count by one.
-Now we dfs all vertices similarly and if any vertex is not pre-dfs'd or not traversed
-previously would mean that that vertex belongs to different component. So we dfs it
-and increment count.
+Now we dfs all vertices similarly and if any vertex is not pre-dfs'd or not traversed previously would mean that that vertex belongs to different component. So we dfs it and increment count.
 
 */
 
@@ -21,6 +19,7 @@ and increment count.
 
 
 void dfs(struct Node *vertex,struct Node **visited);
+int count_connected_components(struct Node *graph[SIZE]);
 
 int main()
 {
