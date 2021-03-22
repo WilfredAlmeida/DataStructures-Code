@@ -17,7 +17,7 @@ int main()
 {
     //For our case, we are taking presorted array.
 
-    int a[] = {1,2,3,4,5}, required_sum = 10, i=0;
+    int a[] = {1,2,3,4,5}, required_sum = 7, i=0;
 
     int j = ((int) sizeof(a)/sizeof(a[0])) - 1;
 
@@ -33,4 +33,6 @@ int main()
         else if((a[i] + a[j]) > required_sum)
             --j;
     }
+
+    return 0;
 }
