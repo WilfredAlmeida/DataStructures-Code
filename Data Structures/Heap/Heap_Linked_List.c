@@ -55,7 +55,7 @@ struct Node *root;
 
 int main()
 {
-    int array[] = {789,123,98,234,908,956,46,324,876,534,12,905,34,56764,4325};
+    int array[] = {789,123,98,234,908,956,46,324,534,12,905,34,56764,4325};
     size_t array_size = sizeof(array) / sizeof(array[0]);
 
     struct Queue *queue = create_queue(array_size);

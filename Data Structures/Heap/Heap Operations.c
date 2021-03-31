@@ -29,7 +29,7 @@ int delete_from_heap(H, i);
 int main()
 {
 
-    int H[] = {0, 10, 20, 30, 25, 5, 40, 35};
+    int H[] = {0, 10, 20, 30, 25, 5, 40, 35, 654, 15};
     // 40,25,35,10,5,20,30 -> Formed Heap
     //Heap is created from index 1, index 0 is blank, ignore it.
 
