@@ -1,8 +1,17 @@
 #include<stdio.h>
-
+#include<string.h>
 int main()
 {
-    int *a = {1,2,3};
+    char *c = "Hello";
 
-    printf("%d",a[2]);
+    f1("Hi");
+}
+
+void f1(char *c)
+{
+    char *s;
+
+    strcpy(s,c);
+
+    printf("%s",s);
 }

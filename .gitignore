@@ -1,3 +1,5 @@
 /build
 *.exe
+*.o
 "D:\Study\C and C++\Code\C\Data Structures\Hello World.c"
+.vscode
